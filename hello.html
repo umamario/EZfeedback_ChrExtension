@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+  <!--
+      button style from Nicholas Gallagher
+      http://nicolasgallagher.com/pure-css-speech-bubbles/demo/
+   -->
+  <head>
+    <meta charset="utf-8">
+    <title>survey</title>
+    <style>
+
+      .triangle-right {
+      position:relative;
+      padding:15px;
+      margin:1em 0 .7em;
+      color:#fff;
+      background:rgb(76, 217, 100); /* default background for browserswithout     gradient support */
+      /* css3 */
+      -webkit-border-radius:10px;
+      -moz-border-radius:10px;
+      border-radius:10px;
+      }
+      body {
+        font-family: Helvetica;
+        font-size: 12pt; 
+      }
+      .elabel {
+        width: 45px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p style="color:#fcfcfc" class="triangle-right">Was the time taken to process your order satisfactory?</p>
+
+    <form action="http://185.58.227.236:8000/response/" target="_blank" method="GET">
+      <label><input type="image" class="elabel" name="emoji-rating1" value="1" alt="error" src="happy.png"> </label>
+      <label><input type="image" class="elabel" name="emoji-rating2" value="2" alt="error" src="neutral.png"> </label>
+      <label><input type="image" class="elabel" name="emoji-rating3" value="3" alt="error" src="angry.png"> </label>
+    </form>
+  </body>
+</html>
+
+
